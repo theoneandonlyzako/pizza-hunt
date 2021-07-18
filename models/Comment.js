@@ -50,7 +50,7 @@ const CommentSchema = new Schema({
     }
 );
 
-CommentSchema.virtual('replyCount').get(function(){
+CommentSchema.virtual('replyCount').get(function () {
     return this.replies.length;
 })
 
